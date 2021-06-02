@@ -74,21 +74,33 @@ button:hover, button:focus {
 .icon-header {
     fill: var(--main-text-color);
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .icon-header:hover, 
-.icon-header:focus,
-.icon-clients:hover,
-.icon-clientsfocus {
+.icon-header:focus {
     fill: var(--hover-focus-color);
 }
 
+.icon-clients:hover,
+.icon-clientsfocus {
+    fill: var(--hover-focus-color);
+    border: 1px solid var(--hover-focus-color);;
+}
+
 .icon-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid var(--border-color-clients);
+    border: 170px 92px;
     border-radius: 4px;
-    padding: 16px 32px;
     margin-right: 30px;
-    margin-top: 50px; 
+    margin-top: 50px;
+
+    fill: var(--border-color-clients);
+    cursor: pointer;
 }
 
 .icon-social-link {
@@ -98,10 +110,15 @@ button:hover, button:focus {
     border-radius: 50px; 
     justify-content: center;
     align-items: center;
+    fill: var(--border-color-clients);
+    cursor: pointer;
+
+    
 }
 
 .icon-social-link:hover, .icon-social-link:focus {
     background: var(--hover-focus-color);
+    
 }
 
 .icon-social-link:hover, .icon-social-link:focus {
