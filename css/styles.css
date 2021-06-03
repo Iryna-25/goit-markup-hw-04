@@ -116,11 +116,13 @@ button:hover, button:focus {
     cursor: pointer;
 }
 
-.icon-social {
+
+
+.icon-social, .icon-social-add {
     display: block;
 }
 
-.icon-social-link {
+.icon-social-link, .icon-social-link-add{
     width: 44px;
     height: 44px;
     display: inline-block;
@@ -131,20 +133,33 @@ button:hover, button:focus {
     cursor: pointer;
 }
 
-.icon-social-link:hover, .icon-social-link:focus {
+.icon-social-link-add {
+    fill: rgb(225, 225, 225, 0.01);
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4));
+}
+
+.icon-social-link:hover, .icon-social-link:focus,
+.icon-social-link-add:hover, .icon-social-link-add:focus {
     fill: var(--main-text-white-color);
     background: var(--hover-focus-color);
 }
 
-.icon-social-ul { 
+.icon-social-ul, .icon-social-ul-add { 
     display: flex;
     align-content: center;
     margin: 16px 32px 30px 32px;
 }
 
-.icon-social-li:not(:last-child) {
+.icon-social-li:not(:last-child), .icon-social-li-add:not(:last-child) {
     margin-right: 10px;
 }
+
+
+
+
+
+
+
 
 .webstudio-logo-header, .webstudio-logo-footer {
     font-family: 'Raleway', sans-serif;
@@ -336,7 +351,9 @@ a {
 .portfolio-buttons,
 .our-clients-icons, 
 .icon-social,
-.icon-social-link {
+.icon-social-link,
+.icon-social-add,
+.icon-social-link-add {
     display: flex;
     align-content: center;
 }
@@ -407,7 +424,7 @@ a {
     margin-right: 30px;
 }
 
-.our-team-photo .our-team-employee, .our-team-position, .our-clients-icons, .icon-social, .icon-social-link {
+.our-team-photo .our-team-employee, .our-team-position, .our-clients-icons, .icon-social, .icon-social-link, .icon-social-add, .icon-social-link-add {
     text-align: center;
 }
 
