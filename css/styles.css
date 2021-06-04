@@ -11,6 +11,7 @@
     --bg-color-portfolio: #E5E5E5; 
     --border-color: #EEEEEE;
     --border-color-clients: #AFB1B8;
+    --bg-color-add: #44454E;
 }
 
 body, footer {
@@ -24,7 +25,7 @@ body, footer {
 }
 
 header {
-    border-bottom: 10px;
+    border-bottom: 1px;
 }
 
 ul {
@@ -57,24 +58,12 @@ button:hover, button:focus {
     box-sizing: border-box;
 }
 
-.decides-order {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
-    background-repeat: no-repeat;
+a {
+    color: var(--main-title-color);
+    text-decoration: none; 
 }
 
-
 /* icons*/
-
-/* .icons-list {
-    border: 1px solid var(--bg-color-portfolio);
-    
-    padding: 25px 100px;
-    margin-bottom: 30px;
-} */
-
 
 .studio-list-tumb {
     width: 100%;
@@ -116,13 +105,11 @@ button:hover, button:focus {
     cursor: pointer;
 }
 
-
-
 .icon-social, .icon-social-add {
     display: block;
 }
 
-.icon-social-link, .icon-social-link-add{
+.icon-social-link {
     width: 44px;
     height: 44px;
     display: inline-block;
@@ -134,8 +121,19 @@ button:hover, button:focus {
 }
 
 .icon-social-link-add {
-    fill: rgb(225, 225, 225, 0.01);
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4));
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50px; 
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-text-white-color);
+    cursor: pointer;
+}
+
+.icon-social-link-add {
+    fill: var(--main-text-white-color);
+    background: var(--bg-color-add);
 }
 
 .icon-social-link:hover, .icon-social-link:focus,
@@ -150,16 +148,42 @@ button:hover, button:focus {
     margin: 16px 32px 30px 32px;
 }
 
+.icon-social-ul-add { 
+    margin: 20px 10px 30px 0px;
+}
+
 .icon-social-li:not(:last-child), .icon-social-li-add:not(:last-child) {
     margin-right: 10px;
 }
 
+/*footer-header*/
+.container  {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
 
+.footer .container{
+    display: flex;
+    align-items: center;
+}
 
+.container-footer-logo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+}
 
+.header .container  {
+    display: flex;
+    align-items: center;
+}
 
-
-
+.container-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 270px;
+}
 
 .webstudio-logo-header, .webstudio-logo-footer {
     font-family: 'Raleway', sans-serif;
@@ -179,7 +203,7 @@ button:hover, button:focus {
     align-content: center;
 }
 
-.links-header li:not(:last-child), .contacts-header li:not(:last-child)  {
+.links-header li:not(:last-child), .contacts-header li:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -190,9 +214,6 @@ button:hover, button:focus {
 }
 
 .links-header {
-    display: flex;    
-    align-items: center;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;  
@@ -203,27 +224,7 @@ button:hover, button:focus {
     padding-bottom: 24px;
 }
 
-.container  {
-    width: 1200px;
-    padding: 0px 15px;
-    margin: 0px auto;
-}
 
-.header .container  {
-    display: flex;
-    align-items: center;
-}
-
-.container-nav {
-    display: flex;
-    align-items: center;
-    margin-right: 270px;
-}
-
-a {
-    color: var(--main-title-color);
-    text-decoration: none; 
-}
 
 .link-header-studio.current, .link-header-portfolio.current {
     color: var(--hover-focus-color);
@@ -268,9 +269,6 @@ a {
 
 .footer {
     background-color: var(--footer-bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-
 }
 
 .address {
@@ -279,15 +277,22 @@ a {
     font-size: 14px;
     color: var(--main-text-white-color); 
     line-height: 1.71;
+    margin-top: 20px;
 }
 
 /*Studio*/
-
 .decides-order {
-    background-color: var(--footer-bg-color);
-    text-align: center;
+    text-align: center; 
+    max-width: 1600px;
+    
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--footer-bg-color);
 }
 
 .effective-decides {
@@ -576,6 +581,10 @@ image {
     color: var(--main-text-white-color);
     font-weight: 700;
     text-align: center;
+}
+.container-footer-add {
+    margin-top: 72px;
+    margin-bottom: 100px;
 }
 
 .add-ul {
