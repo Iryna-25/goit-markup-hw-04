@@ -64,7 +64,6 @@ a {
 }
 
 /* icons*/
-
 .studio-list-tumb {
     width: 100%;
     height: 120px;
@@ -91,21 +90,25 @@ a {
     fill: var(--hover-focus-color);
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
-    fill: var(--hover-focus-color);
+.icon-social-ul-add { 
+    margin: 20px 10px 30px 0px;
 }
 
-.icon-clients {
-    display: flex;
-    align-items: center;
-    fill: var(--border-color-clients);
-    cursor: pointer;
-    text-align: center;
+.icon-social-li:not(:last-child), .icon-social-li-add:not(:last-child) {
+    margin-right: 10px;
 }
 
 .icon-social, .icon-social-add {
     display: block;
+}
+
+.icon-clients {
+    display: block;
+    fill: var(--border-color-clients);
+    align-items: center;
+    
+    cursor: pointer;
+    text-align: center;
 }
 
 .icon-social-link {
@@ -116,6 +119,22 @@ a {
     align-items: center;
     fill: var(--border-color-clients);
     cursor: pointer;
+}
+.our-clients-a {
+    width: 170px;
+    height: 92px;
+    
+    border-radius: 4px;
+
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-text-white-color);
+    cursor: pointer;
+
+    display: flex;
+    align-content: center;
+    
+    border: 1px solid var(--border-color-clients);  
 }
 
 .icon-social-link-add {
@@ -144,33 +163,17 @@ a {
     align-content: center;
 }
 
-.icon-social-ul-add { 
-    margin: 20px 10px 30px 0px;
-}
-
-.icon-social-li:not(:last-child), .icon-social-li-add:not(:last-child) {
-    margin-right: 10px;
-}
-
-.our-clients-a {
-    display: flex;
-    align-content: center;
-
-    justify-content: center;
-    border: 1px solid var(--border-color-clients);
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    align-items: center;
-
-    fill: var(--border-color-clients);
-}
-
 .our-clients-a:focus, .our-clients-a:hover {
-    fill: var(--main-text-white-color);
+    fill: var(--hover-focus-color);
     background-color: var(--main-text-white-color);
     border: 1px solid var(--hover-focus-color);
     border-radius: 4px;
+}
+
+.icon-clients:hover,
+.icon-clients:focus {
+    fill: var(--hover-focus-color);
+    background: var(--main-text-white-color);
 }
 
 
@@ -218,7 +221,6 @@ a {
     align-content: center;
 }
 
-
 .contacts-header {
    justify-items: center;
    margin-left: auto;
@@ -245,8 +247,6 @@ a {
     padding-bottom: 24px;
 }
 
-
-
 .link-header-studio.current, .link-header-portfolio.current {
     color: var(--hover-focus-color);
 }
@@ -272,12 +272,6 @@ a {
     font-weight: 500;
     line-height: 1.17;
 }
-
-/*
-.contacts-header:focus, 
-.contacts-header:hover {
-    color: var(--hover-focus-color);
-} */
 
 .link-header-studio:hover, 
 .link-header-portfolio:hover, 
@@ -399,19 +393,6 @@ a {
     display: flex;
     align-content: center;
 }
-
-
-/*
-.our-clients-icons-li {
-    width: 170px;
-    height: 92px;
-}
-
-.our-clients-icons-li:hover, .our-clients-icons-li:focus {
-    border: 1px solid var(--hover-focus-color);
-    border-radius: 4px;
-}
-*/
 
 img {
     display: block;
@@ -631,7 +612,6 @@ image {
     font-weight: 700;
     text-align: center;
 }
-.container-footer-add 
 
 .add-ul {
     align-content: center;
