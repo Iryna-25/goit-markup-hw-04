@@ -80,7 +80,7 @@ a {
 }
 
 .icon-header {
-    fill: var(--main-text-color);
+    fill: currentColor;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ a {
 
 .icon-clients {
     display: block;
-    fill: var(--border-color-clients);
+    fill: currentColor;
     align-items: center;
     
     cursor: pointer;
@@ -128,7 +128,7 @@ a {
 
     justify-content: center;
     align-items: center;
-    fill: var(--main-text-white-color);
+    color: inherit;
     cursor: pointer;
 
     display: flex;
@@ -162,13 +162,27 @@ a {
     display: flex;
     align-content: center;
 }
+/*
 
 .our-clients-a:focus, .our-clients-a:hover {
     fill: var(--hover-focus-color);
     background-color: var(--main-text-white-color);
     border: 1px solid var(--hover-focus-color);
     border-radius: 4px;
+} */
+
+.our-clients-icons-li:focus,  .our-clients-icons-li:hover {
+    color: var(--hover-focus-color);
+    background-color: var(--main-text-white-color);
+    border: 1px solid var(--hover-focus-color);
+    border-radius: 4px;
 }
+
+.our-clients-icons-li {
+    color: var(--border-color-clients);
+}
+
+
 
 .icon-clients:hover,
 .icon-clients:focus {
