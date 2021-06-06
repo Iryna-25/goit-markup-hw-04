@@ -376,6 +376,7 @@ a {
     line-height: 1.2;
     font-weight: 700;
     color: var(--main-title-color);
+    margin-bottom: 10px;
 }
 
 .studio-list-text {
