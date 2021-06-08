@@ -497,10 +497,6 @@ img {
     border-radius: 4px;
 }
 
-.portfolio-buttons-li:not(:first-child) {
-    margin-left: 8px;
-}
-
 .portfolio-buttons-li:not(:last-child) {
     margin-right: 8px;
 }
@@ -603,8 +599,8 @@ image {
 }
 
 .portfolio-button {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-our-clients {
